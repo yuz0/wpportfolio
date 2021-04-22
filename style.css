@@ -1,0 +1,428 @@
+/*
+Theme Name:Popcorn
+Theme URL:
+Discription:自作WordPressテーマ
+Version: 1.0
+*/
+
+/* ポイント,1166px,960px,540px,480px */
+
+body{
+    background-color: #eee;
+    font-family: Helvetica, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+}
+.wrap{
+    width: 1166px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 1166px) {
+	.wrap{
+        width: 100%;
+    }
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+/* header */
+
+#header{
+    margin: 1em 0;
+    position: relative;
+}
+.remodal-bg{
+    display: none;
+}
+
+#name-logo{
+    padding: 0 1em;
+    float: left;
+}
+#container-header-img{
+    margin-top: -2.4em;
+}
+@media screen and (max-width: 1166px) {
+	#header{
+        margin:0;
+    }
+    #container-header-img{
+        margin-top: 0;
+    }
+}
+@media screen and (max-width: 540px) {
+    .remodal-bg{
+        display: block;
+        float: left;
+        height: 55px;
+        padding-left: 10px;
+    }
+    .fa-bars{
+        font-size: 1.4em;
+        height: 1.1em;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 5px;
+    }
+    .navi-btn{
+        font-size: 8px;
+    }
+    #name-logo{
+        text-align: center;
+        float: none;
+        width: 70%;
+        margin: 0 auto;
+    }
+	#header-menu{
+        display: none;
+    }
+}
+
+#menu-bar a{
+    color: yellow;
+}
+#menu-bar a:hover{
+    color: pink;
+    text-decoration: none;
+}
+
+#header-menu li{
+    height: 55px;
+    display: table-cell;
+    padding: 0 10px;
+    vertical-align: middle;
+    text-align: center;
+    border-left: thin dotted yellow;
+    border-right: thin dotted yellow;
+}
+
+.header-title{
+    display: none;
+}
+
+/* index & single & page */
+#inner-contents{
+    padding: 35px;
+    background-color:#fff
+}
+.main-content{
+    background-color:#fff;
+    padding-left:0;
+    padding-right: 35px;
+    padding-bottom: 2em;
+}
+.content-title{
+    border-bottom: thin dotted #777;
+}
+
+@media screen and (max-width: 960px){
+    #inner-contents{
+        padding: 2em;
+    }
+    .main-content{
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #inner-contents{
+        padding: 1em;
+    }
+}
+
+.next{
+    text-align: right;
+}
+/* index */
+.swiper-container{
+    padding: 0 90px 35px 90px;
+    margin-bottom: -15px;
+}
+.swiper-slide{
+    transition: all 0.3s ease 0s;
+}
+.swiper-slide a{
+    text-decoration: none;
+}
+.swiper-slide:hover{
+    opacity: 0.7;
+}
+.eyecatch{
+    position: relative;
+    overflow: hidden;
+}
+.slide-pic{
+    width: 100%;
+    height: auto;
+}
+.post-cate{
+    position: absolute;
+    text-align: center;
+    min-width: 8em;
+    font-size: 0.8em;
+    padding: 0.1em 0.5em;
+    opacity: 0.9;
+    background-color: yellow;
+    color: #000;
+    right:0;
+    top:0;
+}
+@media screen and (max-width: 960px){
+    .swiper-container{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+@media screen and (max-width: 480px){
+    .swiper-container{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .post-cate{
+        font-size: 0.6em;
+    }
+}
+
+#index-title{
+    padding:10px 0 0 10px;
+}
+@media screen and (max-width: 480px){
+    #index-title{
+        padding: 0;
+    }
+}
+
+.post{
+    padding: 20px 10px;
+    border-bottom: thin dotted #777;
+    transition: all 0.3s ease 0s;
+}
+.post-img{
+    padding: 0;
+}
+.post-img img{
+    width: 100%;
+    height: auto;
+}
+.post:hover{
+    background-color: #f0f8ff;
+    opacity: 0.7;
+}
+.post a:hover{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 540px) {
+    .content-title{
+        padding:10px 0 0 0;
+    }
+    .post-img{
+        padding: 0;
+    }
+    .post-title h3{
+        font-size: 1.1em;
+    }
+    .post-text{
+        display: none;
+    }
+}
+
+.post-meta{
+    font-size: 12px;
+    font-weight: bold;
+}
+.post-text{
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+/* single */
+#see-where{
+    background-color: #fff;
+    margin: 1em auto;
+}
+#see-where ul{
+    color: #777;
+    padding: 0.6rem 0 0.6rem 0.4rem;
+}
+#see-where li{
+    display: inline-block;
+}
+#see-where li::after{
+    content: "/"
+}
+#see-where li:last-child::after{
+    display: none;
+}
+#see-where a:link{
+    color: #777;
+}
+#see-where a:visited{
+    color: #777;
+}
+
+.post-thumbnail-img img{
+    width: 100%;
+    height: auto;
+}
+#post-body p{
+    font-size: 18px;
+    margin-bottom: 1.6em;
+}
+#post-body h1{
+    border-left: double thick violet;
+    border-right: double thick violet;
+    padding: 0.6em 0 0.6em 0.5em;
+    margin-bottom: 1em;
+}
+#post-body h2{
+    border-left: solid thick violet;
+    padding: 0.5em 0 0.5em 0.4em;
+    margin-bottom: 1em;
+    background-color: #eee;
+}
+#post-body h3{
+    border-left: solid thick violet;
+    padding: 0.2em 0 0.2em 0.4em;
+    margin-bottom: 1.2em;
+}
+
+/* sidebar */
+#sidebar{
+    padding: 0;
+    background-color:#fff;
+}
+
+.widget{
+    padding-bottom: 2em;
+}
+.widget h3{
+    background-color: thistle;
+    border-radius: 7px;
+    padding: 5px 0 5px 5px;
+}
+.widget ul{
+    list-style-type: none;
+}
+.widget li{
+    display:block;
+}
+.tag-cloud-link{
+    color: white;
+    background-color: #888;
+    padding: 2px 4px;
+    margin: 2px 4px 2px 0;
+}
+.tag-cloud-link:hover{
+    opacity: 0.7;
+    text-decoration: none;
+    color: white;
+}
+
+/* footer */
+footer{
+    padding: 15px 0 30px 0;
+    background-color:#eee;
+}
+@media screen and (max-width: 1166px){
+    footer{
+        padding: 0;
+    }
+}
+#footer-contents a{
+    color: #ddd;
+}
+
+#tags-list{
+    list-style: none;
+    overflow: hidden;
+}
+.tag{
+    float: left;
+    font-size: 8px;
+    color: #fff;
+    background-color: #444;
+    padding: 2px 4px;
+    margin: 2px 4px 2px 0;
+}
+.tag:hover{
+    opacity: 0.7;
+}
+.footer-item{
+    padding-bottom: 3em;
+}
+.footer-item select{
+    width: 100%;
+    padding: 10px 2px;
+    color: #666;
+}
+
+#footer-bottom li{
+    display: inline-block;
+}
+#footer-bottom li::after{
+    content: "　|　"
+}
+#footer-bottom li:last-child::after{
+    display: none;
+}
+#footer-menu-area{
+    float: left;
+}
+#copyright{
+    float: right;
+}
+@media screen and (max-width: 540px) {
+    #footer-menu-area{
+        float: none;
+        text-align: center;
+    }
+    #copyright{
+        float: none;
+        text-align: center;
+        padding-top: 1em;
+    }
+}
+@media screen and (max-width: 480px) {
+    #footer-bottom li::after{
+        content: none;
+    }
+    #footer-menu-area li{
+        display: block;
+    }
+    #footer-menu-area li::before{
+        content: "▲"
+    }
+}
+
+/* モバイルメニュー */
+.menu-widget{
+    text-align: left;
+    padding-bottom: 2rem;
+}
+.menu-widget h3{
+    background-color: thistle;
+    border-radius: 7px;
+    padding: 5px 0 5px 5px;
+}
+.menu-widget ul{
+    list-style: none;
+}
+
+.remodal-close{
+    text-align: center;
+    margin: 1em auto;
+    position: static!important;
+    display: flex;
+}
+.remodal-close:before{
+    /* display: inline-block; */
+    position: relative;
+}
+.close-btn{
+    /* display: inline-block; */
+    position: relative;
+    top: 4px;
+}
